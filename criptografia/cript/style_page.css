@@ -1,0 +1,22 @@
+body {
+    background-color: #6ba398
+}
+
+h1 {
+    text-align: center;
+    padding: 50px
+}
+
+#input {
+    text-align: center
+}
+
+#btn {
+    text-align: center;
+    padding: 10px;
+}
+
+#output {
+    text-align: center;
+    padding: 50px
+}
