@@ -1,0 +1,7 @@
+- executar scrpits a partir do cliente da nossa aplicacao (browser)
+- DOM = arvores de elementos html interna
+- js nao possui tipagem estatica, mas sim dinamica
+- no js toda variavel pode armazenar qq coisa 
+- tipos de dados mais usados string, int, float, boolean, vetores
+- document() variavel global que se referencia a DOM do html
+- 
