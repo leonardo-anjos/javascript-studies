@@ -1,3 +1,4 @@
-# Studies JavaScript
+### js pratice 
 
-Repository dedicated to studies in web technologies, with a main focus on JavaScript frameworks and libraries
+repository dedicated to studies in the word javascript
+
