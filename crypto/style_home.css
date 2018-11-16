@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    margin-top: 100px
+}
+
+#img_home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#descricao {
+    text-align: center;
+    margin-top: 50px;
+    -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+}
+
+#btn_home {
+    text-align: center;
+    padding: 30px 
+}

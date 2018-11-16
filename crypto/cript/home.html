@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style_page.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seguraça da Informação</h1>
+
+    <form id="input">
+        <textarea id="inputText" rows=10 cols=80 wrap=on></textarea><br>    
+    </form>
+
+   <div id="btn">
+    <input type="button" onclick="cleanInput()" value="Limpar">
+    <button onclick="alphabetize()">Criptografar</button><br>
+   </div>
+    
+   <div id="output">
+        <textarea id="outputText" rows=10 cols=80 wrap=on readonly></textarea>
+   </div> 
+   
+    <script>
+        function cleanInput() {
+            document.getElementById("input").reset();
+        }
+        
+        var textarea = document.getElementById("inputText");
+        var textarea2 = document.getElementById("outputText");
+        
+        function alphabetize() {
+            textarea2.value = textarea.value.split(" ").sort().join(" ")
+        }
+    </script>
+ </body>
+</html>
