@@ -1,19 +1,37 @@
-// developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
-const App = () => {
+class App extends React.Component {
   
-  window.navigator.geolocation.getCurrentPosition(
-    (position) => console.log(position),
-    (err) => console.log(err),
-  );
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      lat: null,
+      long: null
+    }
+    
+    window.navigator.geolocation.getCurrentPosition(
+      position => {
+        this.setState({ 
+          lat: position.coords.latitude,
+          long: position.coords.longitude
+        });
+      }
+    );
+  }
   
-  return(
-    <div>
-      <h3>MySeasons Locator</h3>
-    </div>
-  );
-};
+  render() {
+    return(
+      <div>
+        <h2>MySeasons Locator</h2>
+        <p>Latitude: { this.state.lat }</p>
+        <p>Longitude: { this.state.long }</p>
+      </div>
+    );
+
+  }
+}
 
 ReactDOM.render(<App />, document.querySelector('#root'));
