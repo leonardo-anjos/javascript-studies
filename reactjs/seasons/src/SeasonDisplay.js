@@ -1,9 +1,10 @@
 import React from 'react';
+import './SeasonDisplay.css';
 
 const seasonConfig = {
   summer: {
-    text: "Let's hot the beach!'",
-    iconName: "sun outline"
+    text: "Let's hot in the beach!",
+    iconName: "sun"
   },
   winter: {
     text: "Burr, it is chilly!",
@@ -11,7 +12,7 @@ const seasonConfig = {
   }
 };
 
-const getSeason = (lat, long, mouth) => {
+const getSeason = (lat, mouth) => {
   if(mouth > 2 && mouth < 9) {
     return lat > 0 ? 'summer' : 'winter'
   } else {
@@ -19,19 +20,23 @@ const getSeason = (lat, long, mouth) => {
   }
 }
 
-const SeasonDisplay = (props) => {
-  // console.log('latitude: ', props.lat, '\nlongitude: ', props.long);
-  const season = getSeason(props.lat, props.long, new Date().getMonth);
-  console.log(season);
-  const{text, iconName} = seasonConfig[season]; 
-
-  return(
-    <div  className={`season-display ${season}`}>
-      <i className={`icon-left massive ${iconName} icon`}/>
-      <h3>{text}</h3>
-      <i className={`icon-rigth massive ${iconName} icon`}/>
-    </div>
-  );
+export default class SeasonDisplay extends React.Component {
+  
+  render() {
+    const { lat, long} = this.props;
+    const season = getSeason(this.props.lat, new Date().getMonth);
+    console.log(season);
+    const{text, iconName} = seasonConfig[season]; 
+    console.log(lat, long);
+    
+    return(
+      <div  className={`season-display ${season}`}>
+        <i className={`icon-left massive ${iconName} icon`}/>
+        <h3>{text}</h3>
+        <i className={`icon-right massive ${iconName} icon`}/>
+      </div>
+    );
+  }
+  
 } 
 
-export default SeasonDisplay;
