@@ -9,7 +9,9 @@ export default class SearchBar extends React.Component {
 	render() {
 		return(
 			<div className="ui segment">
-				<form className="ui form">
+				<form 
+					className="ui form"
+					onSubmit={this.onFormSubmit}>
 					<div className="field">
 						<label>Image Search</label>
 						<input 
@@ -26,6 +28,12 @@ export default class SearchBar extends React.Component {
 
 	onInputClick() {
 		console.log('clicked on form...');
+	};
+
+
+	onFormSubmit = event => {
+		event.preventDefault();
+		console.log(this.state.term);
 	};
 
 }
