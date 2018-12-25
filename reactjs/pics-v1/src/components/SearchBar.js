@@ -26,14 +26,15 @@ export default class SearchBar extends React.Component {
 		);
 	}
 
-	onInputClick() {
-		console.log('clicked on form...');
-	};
-
-
 	onFormSubmit = event => {
 		event.preventDefault();
 		console.log(this.state.term);
+
+		this.props.onSubmit(this.state.term);
+	};
+	
+	onInputClick() {
+		console.log('clicked on form...');
 	};
 
 }
