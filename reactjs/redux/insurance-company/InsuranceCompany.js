@@ -4,7 +4,7 @@ console.clear()
 // ACTION CREATORS
 // people dropping off a from 
 const createPolicy = (name, amount) => {
-  return { // ACTION  - a form in our analogy 
+  return {  
     type: 'CREATE_POLICY',
     payload: {
       name: name,
@@ -14,7 +14,7 @@ const createPolicy = (name, amount) => {
 };
 
 const createClaim = (name, amountOfMoneyToCollect) => {
-  return { // ACTION  - a form in our analogy 
+  return { 
     type: 'CREATE_CLAIM',
     payload: {
       name: name,
@@ -24,7 +24,7 @@ const createClaim = (name, amountOfMoneyToCollect) => {
 };
 
 const deletePolicy = (name) => {
-  return { // ACTION  - a form in our analogy 
+  return { 
     type: 'DELETE_POLICY',
     payload: {
       name: name
@@ -64,3 +64,20 @@ const polices = (listOfPolices = [], actions) => {
 
 // obs: the firsth objective is get some data of some action and after modify and remove the data existing with base 
 // on the load of a action 
+
+const { createStores, combineReducers } = Redux;
+
+const ourDepartmens = combineReducers({
+  claimsHistory: claimsHistory,
+  accounting: accounting,
+  polices: polices
+});
+
+const store = createStore(ourDepartmens);
+
+store.dispatch(createPolicy('Leo', 22));
+store.dispatch(createPolicy('Bob', 19));
+store.dispatch(createPolicy('Chris', 27));
+store.dispatch(deletePolicy('Leo'));
+
+console.log(store.getState());
