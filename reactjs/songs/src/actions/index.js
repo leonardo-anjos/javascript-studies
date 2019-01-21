@@ -1,5 +1,5 @@
 // action creator
-export const selectSongs = song => {
+export const selectSong = song => {
   // return an action
   return {
     type: 'SONG_SELECTED',
@@ -7,3 +7,4 @@ export const selectSongs = song => {
   };
 };
 
+  
