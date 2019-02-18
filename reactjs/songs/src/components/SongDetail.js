@@ -3,11 +3,21 @@ import { connect } from 'react-redux';
 
 const SongDetail = ({ song }) => {
   if (!song) {
-    return <div>Select a song</div>;
+    return <div 
+      style={{ 
+        textAlign: 'center' , 
+        fontWeight: 'bold'
+      }}>
+        Select a song
+    </div>;
   }
 
   return (
-    <div>
+    <div 
+      style={{ 
+        textAlign: 'center' , 
+        marginTop: '20%'
+    }}>
       <h3>Details for:</h3>
       <p>
         Title: {song.title}
