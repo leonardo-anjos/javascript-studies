@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
 
 class PostList extends React.Component {
-  
+
   render() {
-    return(
+    return (
       <div>
         PostList
       </div>
@@ -19,6 +19,6 @@ class PostList extends React.Component {
 }
 
 export default connect(
-  null, 
+  null,
   { fetchPosts }
 )(PostList);
