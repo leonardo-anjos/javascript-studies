@@ -1,6 +1,6 @@
 import React from  'react';
 import { Link } from 'react-router-dom';
-import { GoogleAuth } from '../../services/auth';
+import GoogleAuth from '../../services/GoogleAuth';
 
 const HeaderBar = () => {
   return(
