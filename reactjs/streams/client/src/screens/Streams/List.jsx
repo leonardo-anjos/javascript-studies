@@ -1,5 +1,5 @@
 import React from 'react';
-import StreamsList from '../../components/Streams/List';
+import StreamsList from '../../components/Streams/List/List';
 
 const ScreenStreamsDelete = () => {
   return <StreamsList />

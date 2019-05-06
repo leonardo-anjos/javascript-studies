@@ -1,5 +1,5 @@
 import React from 'react';
-import StreamsEdit from '../../components/Streams/Edit';
+import StreamsEdit from '../../components/Streams/Edit/Edit';
 
 const ScreenStreamsEdit = () => {
   return <StreamsEdit />
