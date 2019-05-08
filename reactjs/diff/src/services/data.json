@@ -1,0 +1,65 @@
+{
+  "history": [
+    {
+      "id": 1,
+      "name": "Leonardo Anjos",
+      "nicknames": [],
+      "address": [],
+      "phone": [],
+      "company": null,
+      "version": 0
+    },
+    {
+      "id": 1,
+      "name": "Leonardo Anjos",
+      "nicknames": ["leo"],
+      "address": [
+        {
+          "street": "Rua João Pereira",
+          "suite": "62",
+          "city": "Maranguape",
+          "zipcode": "61950-000"
+        }
+      ],
+      "phone": [
+        {
+          "ddd": "85",
+          "number": "988055821"
+        }
+      ],
+      "company": null,
+      "version": 1
+    },
+    {
+      "id": 1,
+      "name": "Leonardo Anjos",
+      "nicknames": ["leo"],
+      "address": [
+        {
+          "street": "Rua João Pereira",
+          "suite": "62",
+          "city": "Maranguape",
+          "zipcode": "61950-000"
+        },
+        {
+          "street": "Av Pontes Viera",
+          "suite": "145",
+          "city": "Fortaleza",
+          "zipcode": "21456-045"
+        }
+      ],
+      "phone": [
+        {
+          "ddd": "85",
+          "number": "99285022"
+        }
+      ],
+      "company": {
+        "name": "Serviço Federal de Processamento de Dados - SERPRO",
+        "catchPhrase": "Soluções digitais que conectam governo e sociedade",
+        "bs": "Empresa publica de TI"
+      },
+      "version": 2
+    }
+  ]
+}
