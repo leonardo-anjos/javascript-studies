@@ -1,5 +1,5 @@
 import React from 'react';
-import StreamsDelete from '../../components/Streams/Delete';
+import StreamsDelete from '../../components/Streams/Delete/Delete';
 
 const ScreenStreamsDelete = () => {
   return <StreamsDelete />

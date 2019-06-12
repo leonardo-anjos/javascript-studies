@@ -1,5 +1,5 @@
 import React from 'react';
-import StreamsShow from '../../components/Streams/Show';
+import StreamsShow from '../../components/Streams/Show/Show';
 
 const ScreenStreamsShow = () => {
   return <StreamsShow />
