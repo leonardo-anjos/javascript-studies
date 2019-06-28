@@ -34,6 +34,12 @@ class User extends Model {
   tokens () {
     return this.hasMany('App/Models/Token')
   }
+
+  // properti that allows multiples relationship (1-N, 1-1, N-N)
+  properties () {
+    return this.hasMany('App/Models/Property')
+  }
+
 }
 
 module.exports = User

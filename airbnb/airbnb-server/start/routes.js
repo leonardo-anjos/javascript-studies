@@ -25,3 +25,6 @@ Route.post('/users', 'UserController.create');
 
 // auth session
 Route.post('/sessions', 'SessionController.create');
+
+// instead of creating a route for each method Adonis offers us a helper called resource
+Route.resource('properties', 'PropertyController').apiOnly().middleware('auth')
