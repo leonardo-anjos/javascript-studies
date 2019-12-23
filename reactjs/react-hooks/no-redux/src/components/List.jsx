@@ -1,7 +1,6 @@
 import React from 'react';
-import { Store } from '../providers/Store';
 
-export default function List(props) {
+export function List(props) {
 	const { episodes, toggleFavAction, favourites } = props;
 
 	return episodes.map(episode => {
@@ -18,7 +17,7 @@ export default function List(props) {
 					</div>
 					{/* adding favourites */}
 					<button type="button" onClick={() => toggleFavAction(episode)}>
-						{state.favourites.find(fav => fav.id === episode.id) ? 'un favourite' : 'favourite'}
+						{favourites.find(fav => fav.id === episode.id) ? 'un favourite' : 'favourite'}
 					</button>
 				</section>
 			</section>
