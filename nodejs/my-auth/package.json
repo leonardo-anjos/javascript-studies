@@ -1,0 +1,25 @@
+{
+  "name": "my-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://www.github.com/leonardo-anjos/my-auth.git",
+  "author": "Leonardo Anjos <leonardoanjos@insightlab.ufc.br>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "config": "^3.2.4",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
