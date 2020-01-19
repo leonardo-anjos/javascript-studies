@@ -1,4 +1,4 @@
-import jsonPlaceHolder from '../api/jsonPlaceHolder';
+import jsonPlaceHolder from '../services/api';
 import _ from 'lodash';
 
 // fetch posts and users
