@@ -1,15 +1,14 @@
-const express = require("express");
-const multer = require("multer");
-const multerConfig = require("./config/multer");
+const express = require('express');
+const multer = require('multer');
+const multerConfig = require('./config/multer');
 
 const routes = express.Router();
 
-const BoxController = require("./controller/BoxController");
-const FileController = require("./controller/FileController");
+const BoxController = require('./controller/BoxController');
+const FileController = require('./controller/FileController');
 
-routes.post("/boxes", BoxController.store);
-routes.get("/boxes/:id", BoxController.show);
-// routes.post("/files", multer(multerConfig).single("file"), FileController.store);
-routes.post("boxes/:id/files", multer(multerConfig).single("file"),  FileController.store);
+routes.post('/boxe', BoxController.store);
+routes.get('/boxe/:id', BoxController.show);
+routes.post('boxe/:id/file', multer(multerConfig).single('file'), FileController.store);
 
 module.exports = routes;
