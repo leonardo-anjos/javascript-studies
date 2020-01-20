@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+require('dotenv-safe').config();
+const mongoose = require('mongoose');
 
 const File = new mongoose.Schema({
   title: {
@@ -15,8 +16,8 @@ const File = new mongoose.Schema({
   toJSON: { virtuals: true }
 });
 
-File.virtual("url").get(function() {
-  return `http:localhost:1040/files/${encodeURIComponent(this.path)}`;
+File.virtual('url').get(function() {
+  return `http:localhost:${process.env.port}/files/${encodeURIComponent(this.path)}`;
 });
 
-module.exports = mongoose.model("File", File);
+module.exports = mongoose.model('File', File);
