@@ -1,0 +1,19 @@
+{
+  "name": "live",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leonardo-anjos/stack-js-studies.git",
+  "author": "Leonardo Anjos <leonardoanjos@insightlab.ufc.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

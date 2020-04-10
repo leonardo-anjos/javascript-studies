@@ -1,0 +1,21 @@
+# routes definitions
+# routes types
+# schema graphql
+
+# format from user in api - return to front
+type User {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+# get information
+type Query {
+  users: [User!]!
+  user(id: ID!): User
+}
+
+# crud methods
+type Mutation {
+  createUser(name: String!, email: String!): User
+}
