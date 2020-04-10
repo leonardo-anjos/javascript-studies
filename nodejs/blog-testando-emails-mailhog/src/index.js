@@ -7,8 +7,8 @@ const transport = nodemailer.createTransport({
 });
 
 transport.sendMail({
-  from: 'Diego Fernandes <diego@rocketseat.com.br>',
-  to: 'Eu mesmo <diego@rocketseat.com.br>',
+  from: 'Leonardo Anjos <leodrums11@gmail.com',
+  to: 'Eu mesmo <leodrums11@gmail.com',
   subject: 'Testando Mailhog',
   html: '<h1>Funcionou!</h1>'
 })
