@@ -5,6 +5,9 @@ const Search = () => {
   const [term, setTerm] = useState('programming');
   const [results, setResults] = useState([]);
 
+  // let wikipediaUrl = 'http://en.wikipedia.org/w/api.php';
+  // let xssServerUrl = 'http://localhost:3001';
+
   useEffect(() => {
     // solution one
     const search = async () => {
@@ -37,7 +40,7 @@ const Search = () => {
     return <div key={result.pageid} className='item'>
       <div className='content'>
         <div className='header'>{result.title}</div>
-        {result.snippet}
+        <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
       </div>
     </div>
   })
