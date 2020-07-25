@@ -5,7 +5,7 @@ import Login from './components/Login/Login';
 import Main from './components/Main/Main';
 
 export default function Routes() {
-  return(
+  return (
     <BrowserRouter>
       <Route path="/" exact component={Login} />
       <Route path="/dev/:id" component={Main} />
