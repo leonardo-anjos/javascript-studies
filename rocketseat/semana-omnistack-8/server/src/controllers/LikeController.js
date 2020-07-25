@@ -6,7 +6,7 @@ module.exports = {
     const { devId } = req.params;
 
     const loggedDev = await DevModel.findById(user);
-    let targetDev = null
+    let targetDev = null;
 
     try {
       targetDev = await DevModel.findById(devId);

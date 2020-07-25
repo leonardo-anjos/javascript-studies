@@ -8,6 +8,12 @@ module.exports = {
 
     const loggedDev = await DevModel.findById(user);
 
+    // followers
+    // https://api.github.com/users/leonardo-anjos/followers
+
+    // following
+    // https://api.github.com/users/leonardo-anjos/following
+
     const users = await DevModel.find({
       $and: [
         { _id: { $ne: user } },
@@ -38,7 +44,7 @@ module.exports = {
       user: username,
       bio,
       avatar: avatar
-    })
+    });
 
     return res.json(dev);
   }
