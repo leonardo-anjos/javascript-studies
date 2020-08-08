@@ -13,10 +13,11 @@ const TeacherItem: React.FC = () => {
         </div>
       </header>
       <p>
-        asdasdasd asdasdasd asdasdasdasdasdasd asdasdasd asdasdasdasdasdasd asdasdasd asdasdasdasdasdasd
-            <br /><br />
-            asdasdasd asdasdasd asdasdasdasdasdasd asdasdasd asdasdasdasdasdasd asdasdasd asdasdasdasdasdasd asdasdasd
-          </p>
+        Técnicas de projeto e análise de algoritmos. Algoritmos de busca e ordenação. Árvores. Técnicas de projeto de
+        algoritmos eficientes. Introdução a análise de complexidade de algoritmos.
+        <br /><br />
+        Tipos de problemas. Tratamento de problemas NP-Complexos, NP-Completos e NP-Difíceis. Meta-heurísticas.
+      </p>
       <footer>
         <p>
           preco/hora
