@@ -1,0 +1,22 @@
+// a cada request faz conversao dos dados do request body para um objeto - json
+
+// rotas - cada rota e o endereco da aplicacao http://localhost:3333/users
+// recursos - o que vem depois da url base - /users
+// metodos http - get, post, put, delete entre outros
+
+// parametros - existe 3 tipos de parametros quando fazemos uma requisicao
+// body params: criar ou atualizar - os dados vem no body (request body)
+// route params: indentificar um recurso na rota - pegar, atualizar ou deletar http://localhost:3333/users/:id
+// query params: usado mt em listagem por ex em paginacao
+
+// knex e um quer builder - escreve consultas sql em js
+// select * from users - knex('users').select('*')
+// sqlite3 - banco sql em memoria de facil utilizacao
+
+// transactions: em bd todas as operacoes sao realizadas ao msm tempo e caso ocorra um erro as mesmas sejam desfeitas
+
+// __dirname === pwd
+
+// criando tabelas no bd
+// migrations: controlam as versoes do bd - git para o banco de dados
+
